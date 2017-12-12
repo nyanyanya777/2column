@@ -3,7 +3,25 @@
 /*---------------------------------
 BASE
 ----------------------------------*/
+html {
+  font-size: 62.5%;
+}
 
+body {
+  color: #333;
+  font-family: "Noto Sans JP" sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+*, *::before,*::after {
+  box-sizing: border-box;
+}
+
+a:link, a:hover, a:visited, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
 
 
 
@@ -13,7 +31,7 @@ parts
 ----------------------------------*/
 .wrapper {
   width: 970px;
-  margin: 30px 40px;
+  margin: 30px auto 40px;
 }
 
 .clearfix::after {
@@ -25,8 +43,47 @@ parts
 /*---------------------------------
 header
 ----------------------------------*/
+
 .header {
   width: 100%;
+  padding: 10px 0 10px;
+  background-color: #FFFFFF;
+}
+
+.logo {
+  width: 100%;
+  height: 120px;
+  background: url("../images/No Friends-logo.png") no-repeat;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.global-nav {
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+  color: #333;
+  padding-left: 18px;
+}
+
+.global-nav .nav-item {
+  display: inline-block;
+  padding: 2px 24px;
+  letter-spacing: 1px;
+  border-right: 1px solid #333;
+}
+
+.global-nav .nav-item:first-child {
+  display: inline-block;
+  letter-spacing: 1px;
+  border-left: 1px solid #333;
 }
 
 
